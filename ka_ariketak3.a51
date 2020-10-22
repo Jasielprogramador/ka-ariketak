@@ -22,4 +22,5 @@ setb p1.7
 ;erregistro banku
 mov rs0 #0Bh
 
+
 end
