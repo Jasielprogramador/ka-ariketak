@@ -20,7 +20,21 @@ clr p1
 setb p1.7
 
 ;erregistro banku
-mov rs0 #0Bh
+setb psw.3
+clr psw.4
+mov r0,#OBh
+
+setb psw.4
+clr psw.3
+mov r0,#04h
+
+setb psw.3
+clr psw.4
+mov A,r0
+
+setb psw.4
+clr psw.3
+add A,r1
 
 
 end
